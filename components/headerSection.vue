@@ -1,12 +1,19 @@
 <template>
   <header class="header">
+
+    <div class="header__links">
+      <a href="#">link</a>
+      <a href="#">link</a>
+      <a href="#">link</a>
+      <a href="#">link</a>
+    </div>
     <div class="header__content">
 
         <div class="header__title">
           <h1>Lorem Ipsum</h1>
           <h2>Dolar sit amet</h2>
         </div>
-        <diV class="header__title--svg">
+        <diV class="header__svg">
           <img src="/website-setup-animate.svg" width="100%">
         </diV>
 

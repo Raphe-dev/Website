@@ -1,11 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-@import 'header';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300:500:700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-body, html {
+@import
+'media',
+'header',
+'quote',
+'lightsail',
+'flexcards';
+
+html {
   margin: 0;
   padding: 0;
   min-height: 100vh;
   background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+  color: #47494e;
+  overflow-x: hidden;
+  font-size: 16px;
+
+  @media (min-width: 2000px) {
+      font-size: 32px;
+   }
+
 }
 
 h1, h2, h3, h4, h5 {

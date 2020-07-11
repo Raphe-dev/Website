@@ -1,0 +1,58 @@
+.quote {
+  min-height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  background-color: #f9f9f9;
+
+  @include md {
+  padding: 0 3rem;
+  }
+
+  &__text {
+    display: flex;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    text-align: center;
+    font-size: 1.75rem;
+
+    @include md {
+      font-size: 3rem;
+    }
+
+    &:before, &:after {
+      position: relative;
+      opacity: 0.15;
+      font-style: normal;
+      top: 2rem;
+      line-height: 0;
+      font-size: 6rem;
+      font-weight: 500;
+
+      @include md {
+        padding: 0 1rem;
+        top: 3.5rem;
+        font-size: 12rem;
+      }
+    }
+
+    &:before {
+      align-self: flex-start;
+      content: "“";
+
+    }
+
+    &:after {
+      align-self: flex-end;
+      content: "\201D";
+    }
+  }
+}
+
+q {
+  font-family: 'Roboto', sans-serif;
+}
+
