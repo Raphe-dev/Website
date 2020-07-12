@@ -1,0 +1,48 @@
+.stack {
+  min-height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem;
+  @include md {
+    padding: 4rem;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-width: 30vw;
+    width: 30vw;
+    padding:0 1rem;
+
+    @include md {
+      width: 10rem;
+      min-width: 10vw;
+    }
+
+    &:hover {
+      .stack__item--txt {
+        opacity: 1;
+      }
+    }
+
+    &--img {
+      filter: grayscale(90%);
+      transition-duration: 0.3s;
+      &:hover {
+        filter: none;
+      }
+    }
+
+    &--txt {
+      text-transform: uppercase;
+      letter-spacing: 0.125rem ;
+      min-height: 1rem;
+      transition-duration: 0.3s;
+      opacity: 0;
+    }
+  }
+}

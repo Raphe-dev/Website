@@ -88,15 +88,15 @@
   &__svg {
     position: absolute;
     width: 20rem;
-    bottom: -5rem;
+    bottom: -3rem;
     right: 0;
 
     @include sm {
       width: 24rem;
     }
     @include md {
-      width: 30rem;
-      bottom: -6rem;
+      width: 28rem;
+      bottom: -5rem;
       right: 2rem;
     }
     @include lg {

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300:500:700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 @import
@@ -6,13 +6,15 @@
 'header',
 'quote',
 'lightsail',
+'stack',
+'alternate',
 'flexcards';
 
 html {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  background-color: #fff;
+  background-color: #f9f9f9;
   font-family: 'Roboto', sans-serif;
   color: #47494e;
   overflow-x: hidden;

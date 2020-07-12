@@ -2,7 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 20rem;
+  min-height: 50vh;
+  margin-bottom: 8rem;
 
   &__flex {
     width: 100%;
@@ -21,10 +22,22 @@
     min-width: 16rem;
     padding: 2rem;
 
+    max-width: 100%;
+
+    @include md {
+      max-width: 50%;
+      min-width: 50%;
+    }
+
+    @include lg {
+      max-width: 25%;
+      min-width: 25%;
+    }
+
 
     &--img {
-
-    }
+      width: 40%;
+      }
 
     &--title {
       font-family: 'Roboto', sans-serif;

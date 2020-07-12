@@ -1,7 +1,7 @@
 <template>
   <section class="lightsail">
     <div class="lightsail__svg">
-      img
+      <img src="/images/lighthouse-animate.svg" width="90%"/>
     </div>
     <div class="lightsail__content">
       <div class="lightsail__content--title">
