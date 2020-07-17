@@ -1,4 +1,12 @@
 <template>
+  <footer class="footer">
+    <div>
+      
+
+    </div>
+
+    <small></small>
+  </footer>
 
 </template>
 
