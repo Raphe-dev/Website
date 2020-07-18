@@ -6,33 +6,13 @@
 
     <quote-section></quote-section>
 
-    <lightsail-section></lightsail-section>
+    <lighthouse-section></lighthouse-section>
 
     <alternate-section></alternate-section>
 
     <stack-section></stack-section>
 
-
-    <div>lorem</div>
-    <div>lorem</div>
-    <div>lorem</div>
-    <div>lorem</div>
-    <div>lorem</div>
-    <div>lorem</div>
-    <div>lorem</div>
-    <div>lorem</div>
-    <div>lorem</div>
-    <div>lorem</div>
-    <div>lorem</div>
-    <div>lorem</div>
-    <div>lorem</div>
-    <div>lorem</div>
-    <div>lorem</div>
-    <div>lorem</div>
-    <div>lorem</div>
-    <div>lorem</div>
-    <div>lorem</div>
-
+    <footer-section/>
   </div>
 </template>
 
@@ -40,10 +20,13 @@
   import headerSection from '@/components/headerSection.vue'
   import FlexcardSection from "../components/flexcardSection";
   import QuoteSection from "../components/quoteSection";
-  import LightsailSection from "../components/lightsailSection";
+  import lighthouseSection from "../components/lighthouseSection";
   import StackSection from "../components/stackSection";
   import alternateSection from "../components/alternateSection";
+  import FooterSection from "../components/footerSection";
   export default {
-    components: {StackSection, alternateSection, LightsailSection, QuoteSection, FlexcardSection, headerSection }
+    components: {
+      FooterSection,
+      StackSection, alternateSection, lighthouseSection, QuoteSection, FlexcardSection, headerSection }
   }
 </script>

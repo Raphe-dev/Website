@@ -1,0 +1,39 @@
+.foot {
+  min-height: 25vh;
+  width: 100%;
+  background-color: #323232;
+  color: #f9f9f9;
+
+  &__container {
+    min-height: 8rem;
+    display: flex;
+    margin-top: 1rem;
+    color: white;
+  }
+
+  &__col {
+    flex:1;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__social {
+    width:12rem;
+    font-size: 1rem;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+
+    svg {
+      cursor: pointer;
+      transition-duration: 0.2s;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}

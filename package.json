@@ -10,6 +10,7 @@
     "serve": "nuxt serve"
   },
   "dependencies": {
+    "in-viewport": "^3.6.0",
     "nuxt": "^2.13.0"
   },
   "devDependencies": {

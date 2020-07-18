@@ -9,12 +9,12 @@
     </div>
     <div class="header__content">
 
-        <div class="header__title">
-          <h1>Lorem Ipsum</h1>
-          <h2>Dolar sit amet</h2>
-        </div>
+        <h1 class="header__title">
+          <span>Lorem Ipsum</span>
+          <span class="header__title--title2">Dolar sit amet</span>
+        </h1>
         <diV class="header__svg">
-          <img src="/website-setup-animate.svg" width="100%">
+          <img src="/images/website-setup-animate.svg" width="100%">
         </diV>
 
     </div>

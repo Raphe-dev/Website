@@ -4,7 +4,7 @@
   position: relative;
   color: #f1f1f1;
   background: linear-gradient(90deg, #586de4, #9c43e4, #40b2d4);
-  background-size: 1200% 1200%;
+  background-size: 1600% 1600%;
   -webkit-animation: BgGradient 120s ease infinite;
   -moz-animation: BgGradient 120s ease infinite;
   animation: BgGradient 120s ease infinite;
@@ -65,7 +65,7 @@
       padding-left: 4rem;
     }
 
-    h2 {
+    &--title2 {
       padding-left: 2rem;
       font-size: 1.25rem;
 
@@ -106,7 +106,7 @@
     }
     @include xl {
       width: 40rem;
-      bottom: -8rem;
+      bottom: 3rem;
       right: 6rem;
     }
 
@@ -118,6 +118,10 @@
     max-height: 150px;
     height: 10vh;
     margin-bottom: -7px;
+
+    &.-footer {
+      transform: rotate(180deg);
+    }
     @media (max-width: 768px) {
       height: 40px;
       min-height: 40px;

@@ -1,4 +1,4 @@
-.lightsail {
+.lighthouse {
   min-height: 50vh;
   width: 100%;
   height: 100%;
@@ -10,8 +10,6 @@
   @include md {
     flex-direction: row;
     height: 30vh;
-    margin: 8rem 0;
-
   }
 
 

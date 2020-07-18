@@ -1,18 +1,18 @@
 <template>
-  <section class="lightsail">
-    <div class="lightsail__svg">
+  <section class="lighthouse">
+    <div class="lighthouse__svg">
       <img src="/images/lighthouse-animate.svg" width="90%"/>
     </div>
-    <div class="lightsail__content">
-      <div class="lightsail__content--title">
+    <div class="lighthouse__content">
+      <div class="lighthouse__content--title">
         title
       </div>
 
-      <p class="lightsail__content--text">
+      <p class="lighthouse__content--text">
         Lorme ipsum dolar sit amet
       </p>
 
-      <div class="lightsail__content--result">
+      <div class="lighthouse__content--result">
         <div>img</div>
         <div>img</div>
       </div>
@@ -22,6 +22,6 @@
 
 <script>
 export default {
-  name: "lightsail-section"
+  name: "lighthouse-section"
 }
 </script>

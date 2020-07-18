@@ -1,26 +1,37 @@
 .stack {
-  min-height: 50vh;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
   padding: 1rem;
-  @include md {
-    padding: 4rem;
+
+  &__wrapper {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    @include md {
+      min-height: 35vh;
+    }
   }
 
   &__item {
     display: flex;
     align-items: center;
     flex-direction: column;
-    min-width: 30vw;
-    width: 30vw;
-    padding:0 1rem;
+    justify-content: space-between;
+    cursor: pointer;
+
+    min-width: 40%;
 
     @include md {
-      width: 10rem;
-      min-width: 10vw;
+      min-width: 10%
+    }
+
+    @include lg {
+      min-width: unset;
     }
 
     &:hover {
@@ -32,6 +43,24 @@
     &--img {
       filter: grayscale(90%);
       transition-duration: 0.3s;
+
+      width: 5rem;
+      height: 5rem;
+
+      @include lg {
+        width : 7rem;
+        height: 7rem;
+      }
+
+      @include xl {
+        min-width: 10rem;
+        min-height: 10rem;
+      }
+
+      max-width: 12rem;
+      max-height: 12rem;
+
+
       &:hover {
         filter: none;
       }
@@ -43,6 +72,25 @@
       min-height: 1rem;
       transition-duration: 0.3s;
       opacity: 0;
+    }
+  }
+
+  &__title {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    color: #c3c3c3;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px #c1c1c1;
+
+    @include md {
+      font-size: 2rem;
+    }
+
+    @include lg {
+      font-size: 2.5rem;
     }
   }
 }

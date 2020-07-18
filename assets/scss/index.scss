@@ -5,9 +5,10 @@
 'media',
 'header',
 'quote',
-'lightsail',
+'lighthouse',
 'stack',
 'alternate',
+'footer',
 'flexcards';
 
 html {
@@ -29,4 +30,19 @@ html {
 h1, h2, h3, h4, h5 {
   font-size: inherit;
   font-weight: inherit;
+}
+
+div, span {
+  display: block;
+}
+
+.slide-leave-active,
+.slide-enter-active {
+  transition: 1s;
+}
+.slide-enter {
+  transform: translate(0, 100%);
+}
+.slide-leave-to {
+  transform: translate(-100%, 0);
 }
