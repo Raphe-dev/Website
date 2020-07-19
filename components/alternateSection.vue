@@ -1,14 +1,14 @@
 <template>
   <section class="alternate">
-    <div class="alternate__item" v-for="(item, index) in items" :key="index" :class="{ '-reverse' : index % 2 === 0 }"  v-if="item.visible">
-      <transition name="slide">
-        <div class="alternate__item--img" :ref="`alternate-${index}`" >
-          <img :src="item.img" height="100%" width="100%"/>
+    <div class="alternate__item" v-for="(item, index) in items" :key="index" :class="{ '-reverse' : index % 2 === 0 }" >
+        <div class="alternate__item--img" v-observe-visibility="{callback:  (isVisible, entry) => itemVisible(isVisible, entry, item), throttle: 300, once: true}">
+          <transition :name=" index % 2 === 0 ? 'slide' : 'slide-reverse'">
+            <img :src="item.img" height="100%" width="100%" v-if="item.visible"/>
+          </transition>
         </div>
-      </transition>
 
 
-      <div class="alternate__item--txt">
+      <div class="alternate__item--txt" :class="{ '-reverse' : index % 2 !== 0 }" >
         <h3>
           {{ item.title }}
         </h3>
@@ -19,7 +19,6 @@
 </template>
 
 <script>
-import inViewport from 'in-viewport'
 export default {
   name: "alternate-section",
   data: () => ({
@@ -31,9 +30,12 @@ export default {
     ]
   }),
   mounted(){
-    this.items.forEach((item, index) => {
-      inViewport(this.$refs[`alternate-${index}`], item.visible = true)
-    })
+  },
+  methods: {
+    itemVisible(isVisible, entry, item) {
+      console.log(entry, isVisible)
+      item.visible = isVisible;
+    }
   }
 
 }

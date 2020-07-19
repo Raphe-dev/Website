@@ -1,5 +1,5 @@
 <template>
-  <div style="display: flex; flex-direction: column">
+  <div>
     <header-section></header-section>
 
     <flexcard-section></flexcard-section>
@@ -10,9 +10,15 @@
 
     <alternate-section></alternate-section>
 
+    <form-contact></form-contact>
+
     <stack-section></stack-section>
 
-    <footer-section/>
+    <footer-section></footer-section>
+
+    <div class="copyright">
+      © Raphaëlle Roy 2020
+    </div>
   </div>
 </template>
 
@@ -24,8 +30,10 @@
   import StackSection from "../components/stackSection";
   import alternateSection from "../components/alternateSection";
   import FooterSection from "../components/footerSection";
+  import FormContact from "../components/formContact";
   export default {
     components: {
+      FormContact,
       FooterSection,
       StackSection, alternateSection, lighthouseSection, QuoteSection, FlexcardSection, headerSection }
   }

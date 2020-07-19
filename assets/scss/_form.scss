@@ -1,0 +1,41 @@
+.formContact {
+  min-height: 50vh;
+  width:100%;
+  background-color: #fff ;
+  position: relative;
+
+  &__title {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__container {
+    position: absolute;
+    min-height: 50vh;
+    width: 100%;
+    background-color: #47494E;
+    top:0;
+    transition: linear 0.3s;
+    color: #f9f9f9;
+
+  }
+
+  &__close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    z-index: 2;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+  }
+
+
+  &__form {
+  }
+}

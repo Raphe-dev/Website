@@ -44,8 +44,8 @@
       filter: grayscale(90%);
       transition-duration: 0.3s;
 
-      width: 5rem;
-      height: 5rem;
+      width: 6rem;
+      height: 6rem;
 
       @include lg {
         width : 7rem;
@@ -71,7 +71,10 @@
       letter-spacing: 0.125rem ;
       min-height: 1rem;
       transition-duration: 0.3s;
-      opacity: 0;
+
+      @include md {
+        opacity: 0;
+      }
     }
   }
 

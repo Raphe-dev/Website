@@ -9,6 +9,7 @@
 'stack',
 'alternate',
 'footer',
+'form',
 'flexcards';
 
 html {
@@ -41,8 +42,19 @@ div, span {
   transition: 1s;
 }
 .slide-enter {
-  transform: translate(0, 100%);
+  transform: translate(100%, 0);
 }
 .slide-leave-to {
+  transform: translate(-100%, 0);
+}
+
+.slide-reverse--leave-active,
+.slide-reverse-enter-active {
+  transition: 1s;
+}
+.slide-reverse-enter {
+  transform: translate(-100%, 0);
+}
+.slide-reverse-leave-to {
   transform: translate(-100%, 0);
 }
