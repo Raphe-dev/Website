@@ -1,10 +1,13 @@
 <template>
   <section class="flexcards">
     <div class="flexcards__flex">
-      <div v-for="(card, index) in cards" :key="index" class="flexcards__item" @mouseenter="mouseHover" @mouseleave="mouseOut">
+      <div v-for="(card, index) in cards" :key="index" class="flexcards__item" >
 
-        <div class="flexcards__item--img">
-          <img :src="card.img" style="width: 100%;">
+      <div class=flexcards__wrap @mouseenter="mouseHover" @mouseleave="mouseOut">
+      
+
+        <div class="flexcards__item--img" >
+          <img :src="card.img" style="width: 100%;" :alt="card.title"> 
         </div>
 
         <span class="flexcards__item--title">{{ card.title }}</span>
@@ -12,6 +15,8 @@
         <div class="flexcards__item--text">
           {{ card.txt }}
         </div>
+
+      </div>
 
       </div>
     </div>
@@ -23,10 +28,10 @@ export default {
   name: "flexcardSection",
   data: () => ({
     cards: [
-      { title: 'title', img: '/images/time.svg', txt: 'lorem ipsum dolar sit amet'},
-      { title: 'title', img: '/images/devices.svg', txt: 'lorem ipsum dolar sit amet'},
-      { title: 'title', img: '/images/search.svg', txt: 'lorem ipsum dolar sit amet'},
-      { title: 'title', img: '/images/encryption.svg', txt: 'lorem ipsum dolar sit amet'}
+      { title: 'Fast', img: '/images/time.svg', txt: 'lorem ipsum dolar sit amet'},
+      { title: 'Responsive', img: '/images/devices.svg', txt: 'lorem ipsum dolar sit amet'},
+      { title: 'Visible', img: '/images/search.svg', txt: 'lorem ipsum dolar sit amet'},
+      { title: 'Secure', img: '/images/encryption.svg', txt: 'lorem ipsum dolar sit amet'}
     ]
   }),
   methods: {

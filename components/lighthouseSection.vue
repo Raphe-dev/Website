@@ -1,7 +1,7 @@
 <template>
   <section class="lighthouse">
     <div class="lighthouse__svg">
-      <img src="/images/lighthouse-animate.svg" width="90%"/>
+      <img src="/images/lighthouse-animate.svg" width="90%" alt="lighthouse svg animated"/>
     </div>
     <div class="lighthouse__content">
       <div class="lighthouse__content--title">

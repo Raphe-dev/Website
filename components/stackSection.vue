@@ -5,7 +5,7 @@
     </div>
     <div class="stack">
       <div v-for="(item, index) in items" class="stack__item" @click="openLink(item.link)">
-        <img :src="item.img" width="100%" class="stack__item--img"/>
+        <img :src="item.img" width="100%" class="stack__item--img" :alt="item.txt"/>
         <div class="stack__item--txt">
           {{item.txt}}
         </div>

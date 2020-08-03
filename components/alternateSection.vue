@@ -3,15 +3,15 @@
     <div class="alternate__item" v-for="(item, index) in items" :key="index" :class="{ '-reverse' : index % 2 === 0 }" >
         <div class="alternate__item--img" v-observe-visibility="{callback:  (isVisible, entry) => itemVisible(isVisible, entry, item), throttle: 300, once: true}">
           <transition :name=" index % 2 === 0 ? 'slide' : 'slide-reverse'">
-            <img :src="item.img" height="100%" width="100%" v-if="item.visible"/>
+            <img :src="item.img" height="100%" width="100%" v-if="item.visible" :alt="item.title"/>
           </transition>
         </div>
 
 
       <div class="alternate__item--txt" :class="{ '-reverse' : index % 2 !== 0 }" >
-        <h3>
+        <span>
           {{ item.title }}
-        </h3>
+        </span>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut velit lacus, accumsan non pretium nec, rhoncus lobortis augue. Vivamus hendrerit facilisis molestie. Suspendisse non ligula suscipit, mattis tellus vel, placerat mi.</p>
       </div>
     </div>

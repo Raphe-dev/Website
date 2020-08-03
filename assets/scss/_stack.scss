@@ -11,6 +11,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    box-sizing: content-box;
 
     @include md {
       min-height: 35vh;
@@ -27,7 +28,7 @@
     min-width: 40%;
 
     @include md {
-      min-width: 10%
+      min-width: 9%
     }
 
     @include lg {
@@ -41,11 +42,14 @@
     }
 
     &--img {
-      filter: grayscale(90%);
       transition-duration: 0.3s;
 
       width: 6rem;
       height: 6rem;
+
+      @include md {
+        filter: grayscale(100%);
+      }
 
       @include lg {
         width : 7rem;
@@ -84,7 +88,7 @@
     font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 0.25rem;
-    color: #c3c3c3;
+    color: #292e32;
     font-weight: 500;
     text-shadow: 1px 1px 1px #c1c1c1;
 

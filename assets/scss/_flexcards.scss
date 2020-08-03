@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   min-height: 50vh;
-  margin-bottom: 8rem;
+  margin-bottom: 6rem;
 
   &__flex {
     width: 100%;
@@ -11,6 +11,14 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem;
   }
 
   &__item {
@@ -36,7 +44,7 @@
 
 
     &--img {
-      width: 40%;
+      width: 50%;
       }
 
     &--title {
@@ -47,6 +55,7 @@
       padding: 1rem 0;
       white-space: nowrap;
       text-transform: uppercase;
+      letter-spacing: 0.075rem;
     }
 
     &--text {
