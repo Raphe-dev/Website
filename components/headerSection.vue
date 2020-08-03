@@ -14,7 +14,7 @@
           <span class="header__title--title2">Dolar sit amet</span>
         </h1>
         <diV class="header__svg">
-          <img src="/images/website-setup-animate.svg" width="100%">
+          <img src="/images/website-setup-animate.svg" width="100%" alt="Website building svg animated">
         </diV>
 
     </div>
