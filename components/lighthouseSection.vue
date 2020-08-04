@@ -13,8 +13,13 @@
       </p>
 
       <div class="lighthouse__content--result">
-        <div>img</div>
-        <div>img</div>
+        <div>
+            <img src="images/lighthouse_bad_result.png" width="99%" alt="lighthouse bad results"/>
+        </div>
+        <span> - or - </span>
+        <div>
+            <img src="images/lighthouse_good_result.png" width="99%" alt="lighthouse perfect results"/>
+        </div>
       </div>
     </div>
   </section>

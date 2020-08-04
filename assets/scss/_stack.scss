@@ -12,9 +12,11 @@
     flex-direction: column;
     justify-content: space-evenly;
     box-sizing: content-box;
+    margin: 2rem 0;
 
     @include md {
       min-height: 35vh;
+      margin: 0;
     }
   }
 

@@ -3,21 +3,19 @@
     <div class="flexcards__flex">
       <div v-for="(card, index) in cards" :key="index" class="flexcards__item" >
 
-      <div class=flexcards__wrap @mouseenter="mouseHover" @mouseleave="mouseOut">
-      
+        <div class=flexcards__wrap @mouseenter="mouseHover" @mouseleave="mouseOut">
+        
 
-        <div class="flexcards__item--img" >
-          <img :src="card.img" style="width: 100%;" :alt="card.title"> 
+          <div class="flexcards__item--img" >
+            <img :src="card.img" style="width: 100%;" :alt="card.title"> 
+          </div>
+
+          <span class="flexcards__item--title">{{ card.title }}</span>
+
+          <div class="flexcards__item--text">
+            {{ card.txt }}
+          </div>
         </div>
-
-        <span class="flexcards__item--title">{{ card.title }}</span>
-
-        <div class="flexcards__item--text">
-          {{ card.txt }}
-        </div>
-
-      </div>
-
       </div>
     </div>
   </section>

@@ -1,20 +1,29 @@
 .formContact {
-  min-height: 50vh;
+  min-height: 75vh;
   width:100%;
   background-color: #fff ;
   position: relative;
 
+  @include md {
+    min-height: 50vh;
+  }
+
   &__title {
     width: 100%;
-    min-height: 50vh;
+    height: 75vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
+
+    @include md {
+      height: 50vh;
+    }
   }
 
   &__container {
     position: absolute;
-    min-height: 50vh;
+    height: 100%;
     width: 100%;
     background-color: #292E32;
     top:0;
@@ -32,10 +41,69 @@
     z-index: 2;
     font-size: 1.5rem;
     cursor: pointer;
-
   }
 
 
   &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    &--title {
+      width: 100%;
+      height: 5rem;
+      line-height: 4.5rem;
+      text-align: center;
+      font-size: 2rem;
+      margin: 1rem 0;
+    }
+
+    label {
+      display: flex;
+      flex-direction: column;
+      height: 3rem;
+      width: 90%;
+      height: 100%;
+      justify-content: space-between;
+      margin: 0.75rem 0;
+
+      @include md {
+        width: 75%;
+      }
+
+      @include lg {
+        width: 50%;
+      }
+
+      input, textarea {
+        border: 1px solid #f2f2f2;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
+        padding: 0.2rem;
+      }
+      textarea {
+        min-height: 4rem;
+      }
+    }
+
+    span {
+      height: 3rem;
+      line-height: 2.75rem;
+      width: 50%;
+      margin: 0.75rem 0;
+      display: flex;
+      align-items: center;
+
+      input[type="checkbox"] {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+
+      select {
+        padding: 0.2rem;
+      }
+    }
+
   }
 }
