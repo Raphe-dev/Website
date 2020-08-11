@@ -1,0 +1,60 @@
+{
+    "header": {
+      "title": "lorem ipsum",
+      "sub": "dolar sit amet"
+  },
+  "flexcard": {
+    "fast" : {
+      "title" : "fast",
+      "text" : "lorem ipsum dolar sit amet"
+    },
+    "responsive" : {
+      "title" : "responsive",
+      "text" : "lorem ipsum dolar sit amet"
+    },
+    "visible" : {
+      "title" : "visible",
+      "text" : "lorem ipsum dolar sit amet"
+    },
+    "secure" : {
+      "title" : "secure",
+      "text" : "lorem ipsum dolar sit amet"
+    }
+  },
+  "light": {
+    "title" : "lorem ipsum",
+    "text" : "foo",
+    "compare": "- or -"
+  },
+  "alternate": {
+    "performance" : {
+      "title" : "performance",
+      "text" : ""
+    },
+    "Accessibility" : {
+      "title" : "accessibility",
+      "text" : ""
+    },
+    "Visibility" : {
+      "title" : "visibility",
+      "text" : ""
+    },
+    "Scalability" : {
+      "title" : "scalability",
+      "text" : ""
+    }
+  },
+  "form": {
+    "title" : "",
+    "formTitle" : "",
+    "name" : "name",
+    "email" : "email",
+    "type" : "project category",
+    "resume" : "your project in a few lines",
+    "design" : "need a design"
+  },
+  "quotes" : {
+    "3seconds" : "57% of visitors leave a site if it takes longer than 3 seconds to load"
+  }
+}
+  

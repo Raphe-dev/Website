@@ -10,8 +10,8 @@
     <div class="header__content">
 
         <h1 class="header__title">
-          <span>Lorem Ipsum</span>
-          <span class="header__title--title2">Dolar sit amet</span>
+          <span>{{$t('header.title')}}</span>
+          <span class="header__title--title2">{{$t('header.sub')}}</span>
         </h1>
         <diV class="header__svg">
           <img src="/images/website-setup-animate.svg" width="100%" alt="Website building svg animated">

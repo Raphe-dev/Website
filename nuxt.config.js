@@ -1,3 +1,6 @@
+import en from './i18n/en'
+import fr from './i18n/fr'
+
 
 export default {
   /*
@@ -56,6 +59,20 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    [
+      'nuxt-i18n',
+      {
+        locales: ['en', 'fr'],
+        defaultLocale: 'en',
+        vueI18n: {
+          fallbackLocale: 'fr',
+          messages: {
+            en: en,
+            fr: fr
+          }
+        }
+      }
+    ]
   ],
   /*
   ** Build configuration
