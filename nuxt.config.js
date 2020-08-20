@@ -18,14 +18,22 @@ export default {
   ** See https://nuxtjs.org/api/configuration-head
   */
   head: {
-    title: process.env.npm_package_name || 'Raphe.dev',
+    title: 'Raphe.dev',
     htmlAttrs: {
       lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || 'Raphe.dev web development services' }
+      { name: 'url', content: `${process.env.BASE_URL}` },
+      { name: 'description', content: 'Web development services' },
+      { name: 'og:title', content: 'Raphe.dev' },
+      { name: 'og:url', content: '' },
+      { name: 'og:type', content: 'website' },
+      { name: 'og:description', content: 'Web development services' },
+      { name: 'og:image', content: `${process.env.BASE_URL}/images/image.png` },
+      { name: 'og:image:alt', content: 'image alt'},
+      { name: 'og:image:type', content: 'image/png'},
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -72,9 +80,26 @@ export default {
             fr: fr
           }
         }
+      },
+      'nuxt-mq',
+      {
+        defaultBreakpoint: 'default',
+        breakpoints: {
+          sm: 768,
+          md: 1024,
+          lg: Infinity
+        }
       }
     ]
   ],
+  render: {
+    static: {
+      maxAge: 1000 * 60 * 60 * 24 * 7,
+      setHeaders(res) {
+        res.setHeader('Cache-Control', 'public, max-age=86400000, s-maxage=604800000')
+      }
+    }
+  },
   /*
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/

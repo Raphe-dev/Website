@@ -13,6 +13,7 @@
   "dependencies": {
     "nuxt": "^2.13.0",
     "nuxt-i18n": "^6.13.7",
+    "nuxt-mq": "^2.0.1",
     "vue-observe-visibility": "^0.4.6"
   },
   "devDependencies": {
