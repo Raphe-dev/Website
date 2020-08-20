@@ -6,11 +6,11 @@
   "flexcard": {
     "fast" : {
       "title" : "fast",
-      "text" : "Speed is the first thing user experience on your site"
+      "text" : "Speed is the first user experience on a website it has to be good"
     },
     "responsive" : {
       "title" : "responsive",
-      "text" : "No matter the screen size and shape your site has to be enjoyable"
+      "text" : "No matter the screen size and shape browsing a website has to be enjoyable"
     },
     "visible" : {
       "title" : "visible",
@@ -18,7 +18,7 @@
     },
     "secure" : {
       "title" : "secure",
-      "text" : "You would not want anyone to read your code or passwords unencrypted"
+      "text" : "Nobody wants someone to read their code or passwords unencrypted"
     }
   },
   "light": {
