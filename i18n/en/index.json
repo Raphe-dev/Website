@@ -6,48 +6,48 @@
   "flexcard": {
     "fast" : {
       "title" : "fast",
-      "text" : "lorem ipsum dolar sit amet"
+      "text" : "Speed is the first thing user experience on your site"
     },
     "responsive" : {
       "title" : "responsive",
-      "text" : "lorem ipsum dolar sit amet"
+      "text" : "No matter the screen size and shape your site has to be enjoyable"
     },
     "visible" : {
       "title" : "visible",
-      "text" : "lorem ipsum dolar sit amet"
+      "text" : "Google is the biggest search engine, let's use it properly"
     },
     "secure" : {
       "title" : "secure",
-      "text" : "lorem ipsum dolar sit amet"
+      "text" : "You would not want anyone to read your code or passwords unencrypted"
     }
   },
   "light": {
-    "title" : "lorem ipsum",
-    "text" : "foo",
-    "compare": "- or -"
+    "title" : "Google lighthouse",
+    "text" : "Is a powerfull toolset that allows anyone to audit a webpage and see what's going on under the hood. A lot of developper neglect the optimisation of their pages and it shows. When that happen you could get this",
+    "compare": "- when you should get that -"
   },
   "alternate": {
     "performance" : {
       "title" : "performance",
-      "text" : ""
+      "text" : "In a world where everything goes ever faster, we have lost a great deal of our patience toward the internet. The loading time of a website and the speed between interaction with it is now more important than ever. A user should never have to wait for a website while turning his thumb anymore or that might make them leave and never come back."
     },
     "Accessibility" : {
       "title" : "accessibility",
-      "text" : ""
+      "text" : "Screens are everywhere now, almost everybody carry one with them all day. Browsers are lightweight enough to be available on almost any screen, that mean websites now need to be usable and visually appealing on all screen size and shapes. From an Iphone 5 to a 8k screen your website should display properly and give a great user experience."
     },
     "Visibility" : {
       "title" : "visibility",
-      "text" : ""
+      "text" : "SEO has evolved a lot in the recent years, google remain the giant to target but it's ranking algorithm is more complex. Social medias and quality content is taking a bigger place than ever and you should be findable on every platform. With APIs like the open graph protocol or the twitter cards we can make sure your content is sharable and visible, everywhere."
     },
     "Scalability" : {
       "title" : "scalability",
-      "text" : ""
+      "text" : "Maintaining a project on the long term is crucial and it can often get messy when you have different developper working on it over time. Taking advantage of a templating framework like Vue we develop every aspect of a site or app in an independent box also known as a component that we can test independently and make sure it's rock solid. It is very important to insure code uniformity through linter, code formatter and never forget DevOps for auto-deploys and codebase management."
     }
   },
   "form": {
     "title" : "A project in mind ?",
     "btn": "Get in touch",
-    "formTitle" : "Bacon ipsum sit amet",
+    "formTitle" : "Contact us",
     "name" : "name",
     "email" : "email",
     "type" : "project category",
