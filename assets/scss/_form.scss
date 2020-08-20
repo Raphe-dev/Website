@@ -1,11 +1,40 @@
 .formContact {
   min-height: 75vh;
   width:100%;
-  background-color: #fff ;
   position: relative;
 
   @include md {
     min-height: 50vh;
+  }
+
+  @include xl {
+    min-height: 65vh;
+  }
+
+  &__parallax {
+    min-height: 100vh;
+    min-width: 100vw;
+    position: fixed;
+    left: -125%;
+    right: 0;
+    z-index: -1;
+    bottom: 0;
+
+    @include md {
+      left: -25%;
+    }
+
+    @include lg {
+      left: 0;
+    }
+
+    img {
+      min-height: 100vh;
+      min-width: 100vw;
+      filter: grayscale(25%) brightness(50%);
+    }
+
+
   }
 
   &__title {
@@ -15,21 +44,54 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    color: #f9f9f9;
+    font-size: 2.25rem;
+    letter-spacing: 0.075rem;
 
     @include md {
       height: 50vh;
+      font-size: 3.5rem;
     }
   }
 
-  &__container {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: #292E32;
+  &__button {
+    padding: 1rem 3rem;
+    color: #fff;
+    border: 2px solid white;
+    background-color: transparent;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+
+
+    &:hover {
+      background-color: white;
+      color: black;
+    }
+
+  }
+
+  &__modal {
+    position: fixed;
     top:0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+  }
+
+  &__container {
+    background-color: #222222;
     transition: linear 0.3s;
     color: #f9f9f9;
-
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+    position: relative;
   }
 
   &__close {
@@ -44,12 +106,25 @@
   }
 
 
+
+
   &__form {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    
+
+    &--button {
+      width: 100%;
+      height: 4rem;
+      line-height: 4rem;
+      background-color: #42b883;
+      color: white;
+      font-size: 1.5rem;
+      letter-spacing: 0.15rem;
+      text-align: center;
+    }
+
     &--title {
       width: 100%;
       height: 5rem;
@@ -102,6 +177,10 @@
 
       select {
         padding: 0.2rem;
+
+        option {
+          text-transform: capitalize;
+        }
       }
     }
 

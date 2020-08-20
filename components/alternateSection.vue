@@ -33,7 +33,6 @@ export default {
   },
   methods: {
     itemVisible(isVisible, entry, item) {
-      console.log(entry, isVisible)
       item.visible = isVisible;
     }
   }

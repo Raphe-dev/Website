@@ -21,6 +21,7 @@ html {
   color: #47494e;
   overflow-x: hidden;
   font-size: 16px;
+  z-index: 1;
 
   @media (min-width: 2000px) {
       font-size: 32px;
@@ -35,6 +36,17 @@ h1, h2, h3, h4, h5 {
 
 div, span {
   display: block;
+}
+
+.slideUp-leave-active,
+.slideUp-enter-active {
+  transition: 1s;
+}
+.slideUp-enter {
+  transform: translate(0, 100%);
+}
+.slideUp-leave-to {
+  transform: translate(0, 100%);
 }
 
 .slide-leave-active,

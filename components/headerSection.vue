@@ -1,12 +1,17 @@
 <template>
   <header class="header">
 
-    <div class="header__links">
-      <a href="#">link</a>
-      <a href="#">link</a>
-      <a href="#">link</a>
-      <a href="#">link</a>
-    </div>
+      <div class="header__links">
+        <a href="#" class="header__links--item">link</a>
+        <a href="#" class="header__links--item">link</a>
+        <a href="#" class="header__links--item">link</a>
+        <a href="#" class="header__links--item">link</a>
+      </div>
+
+      <div class="header__lang">
+        <div class="header__links--item" @click="$i18n.locale = ($i18n.locale === 'en' ? 'fr' : 'en')">{{$i18n.locale === 'en' ? 'FR' : 'EN'}}</div>
+      </div>
+
     <div class="header__content">
 
         <h1 class="header__title">

@@ -6,6 +6,8 @@
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
+  background-color: #f9f9f9;
+
 
   @include md {
     flex-direction: row;
@@ -21,6 +23,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &--img {
+      max-height: 110%;
+    }
   }
 
   &__content {

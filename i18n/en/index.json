@@ -1,7 +1,7 @@
 {
     "header": {
-      "title": "lorem ipsum",
-      "sub": "dolar sit amet"
+      "title": "Web development",
+      "sub": "Done the right way"
   },
   "flexcard": {
     "fast" : {
@@ -45,16 +45,33 @@
     }
   },
   "form": {
-    "title" : "",
-    "formTitle" : "",
+    "title" : "A project in mind ?",
+    "btn": "Get in touch",
+    "formTitle" : "Bacon ipsum sit amet",
     "name" : "name",
     "email" : "email",
     "type" : "project category",
+    "types": {
+      "default" : "select",
+      "overhaul": "overhaul",
+      "landing": "landing page",
+      "webNew": "website",
+      "webApp": "web app",
+      "eCom": "e-commerce",
+      "blog": "blog",
+      "app": "mobile app"
+    },
     "resume" : "your project in a few lines",
     "design" : "need a design"
   },
   "quotes" : {
     "3seconds" : "57% of visitors leave a site if it takes longer than 3 seconds to load"
+  },
+  "foot" : {
+    "contact" : "contact@raphe.dev",
+    "find" : "Find me on social medias",
+    "loc" : "Quebec, Canada",
+    "quote" : "Let's make the web a better place",
+    "freepik": "A special thanks to <a href='https://www.freepik.com/' target='_blank' style='color:white' rel='noopener'>Freepik</a> for the awesome pictures!"
   }
 }
-  
