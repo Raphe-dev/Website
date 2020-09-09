@@ -25,13 +25,18 @@
 export default {
   name: "flexcardSection",
   data: () => ({
-    cards: [
-      { title: 'Fast', img: '/images/time', txt: 'lorem ipsum dolar sit amet'},
-      { title: 'Responsive', img: '/images/devices', txt: 'lorem ipsum dolar sit amet'},
-      { title: 'Visible', img: '/images/search', txt: 'lorem ipsum dolar sit amet'},
-      { title: 'Secure', img: '/images/encryption', txt: 'lorem ipsum dolar sit amet'}
-    ]
+
   }),
+  computed: {
+    cards() {
+      return [
+        { title: this.$t('flexcard.fast.title'), img: '/images/time', txt: this.$t('flexcard.fast.text')},
+        { title: this.$t('flexcard.responsive.title'), img: '/images/devices', txt: this.$t('flexcard.responsive.text')},
+        { title: this.$t('flexcard.visible.title'), img: '/images/search', txt: this.$t('flexcard.visible.text')},
+        { title: this.$t('flexcard.secure.title'), img: '/images/encryption', txt: this.$t('flexcard.secure.text')}
+      ]
+    }
+  },
   methods: {
     mouseHover(e) {
       const link = String(e.target.children[0].children[0].src)

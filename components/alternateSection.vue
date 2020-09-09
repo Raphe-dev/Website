@@ -10,9 +10,11 @@
 
       <div class="alternate__item--txt" :class="{ '-reverse' : index % 2 !== 0 }" >
         <span>
-          {{ item.title }}
+          {{ $t(`alternate.${item.title}.title`) }}
         </span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut velit lacus, accumsan non pretium nec, rhoncus lobortis augue. Vivamus hendrerit facilisis molestie. Suspendisse non ligula suscipit, mattis tellus vel, placerat mi.</p>
+        <p>
+          {{ $t(`alternate.${item.title}.text`) }}
+        </p>
       </div>
     </div>
   </section>
@@ -23,14 +25,12 @@ export default {
   name: "alternate-section",
   data: () => ({
     items: [
-      { title: 'Performance', img: '/images/speed-animate.svg', txt: 'lorem ipsum dolar sit amet', visible: false},
-      { title: 'Accessibility', img: '/images/responsive-animate.svg', txt: 'lorem ipsum dolar sit amet', visible: false},
-      { title: 'Visibility', img: '/images/seo-animate.svg', txt: 'lorem ipsum dolar sit amet', visible: false},
-      { title: 'Scalability', img: '/images/scalability-animate.svg', txt: 'lorem ipsum dolar sit amet', visible: false}
+      { title: 'performance', img: '/images/speed-animate.svg', visible: false},
+      { title: 'accessibility', img: '/images/responsive-animate.svg', visible: false},
+      { title: 'visibility', img: '/images/seo-animate.svg', visible: false},
+      { title: 'scalability', img: '/images/scalability-animate.svg', visible: false}
     ]
   }),
-  mounted(){
-  },
   methods: {
     itemVisible(isVisible, entry, item) {
       item.visible = isVisible;

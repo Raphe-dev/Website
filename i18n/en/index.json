@@ -22,8 +22,8 @@
     }
   },
   "light": {
-    "title" : "Google lighthouse",
-    "text" : "Is a powerfull toolset that allows anyone to audit a webpage and see what's going on under the hood. A lot of developper neglect the optimisation of their pages and it shows. When that happen you could get this",
+    "title" : "Lighthouse",
+    "text" : "Is a powerful toolset that allows anyone to audit a webpage and see what's going on under the hood. A lot of developper neglect the optimisation of their pages and it shows. When that happen you could get this",
     "compare": "- when you should get that -"
   },
   "alternate": {
@@ -31,15 +31,15 @@
       "title" : "performance",
       "text" : "In a world where everything goes ever faster, we have lost a great deal of our patience toward the internet. The loading time of a website and the speed between interaction with it is now more important than ever. A user should never have to wait for a website while turning his thumb anymore or that might make them leave and never come back."
     },
-    "Accessibility" : {
+    "accessibility" : {
       "title" : "accessibility",
       "text" : "Screens are everywhere now, almost everybody carry one with them all day. Browsers are lightweight enough to be available on almost any screen, that mean websites now need to be usable and visually appealing on all screen size and shapes. From an Iphone 5 to a 8k screen your website should display properly and give a great user experience."
     },
-    "Visibility" : {
+    "visibility" : {
       "title" : "visibility",
       "text" : "SEO has evolved a lot in the recent years, google remain the giant to target but it's ranking algorithm is more complex. Social medias and quality content is taking a bigger place than ever and you should be findable on every platform. With APIs like the open graph protocol or the twitter cards we can make sure your content is sharable and visible, everywhere."
     },
-    "Scalability" : {
+    "scalability" : {
       "title" : "scalability",
       "text" : "Maintaining a project on the long term is crucial and it can often get messy when you have different developper working on it over time. Taking advantage of a templating framework like Vue we develop every aspect of a site or app in an independent box also known as a component that we can test independently and make sure it's rock solid. It is very important to insure code uniformity through linter, code formatter and never forget DevOps for auto-deploys and codebase management."
     }
