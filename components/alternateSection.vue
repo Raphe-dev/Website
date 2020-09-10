@@ -28,7 +28,8 @@ export default {
       { title: 'performance', img: '/images/speed-animate.svg', visible: false},
       { title: 'accessibility', img: '/images/responsive-animate.svg', visible: false},
       { title: 'visibility', img: '/images/seo-animate.svg', visible: false},
-      { title: 'scalability', img: '/images/scalability-animate.svg', visible: false}
+      { title: 'scalability', img: '/images/scalability-animate.svg', visible: false},
+      { title: 'serverless', img: '', visible: false},
     ]
   }),
   methods: {

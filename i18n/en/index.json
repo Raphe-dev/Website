@@ -42,7 +42,10 @@
     "scalability" : {
       "title" : "scalability",
       "text" : "Maintaining a project on the long term is crucial and it can often get messy when you have different developper working on it over time. Taking advantage of a templating framework like Vue we develop every aspect of a site or app in an independent box also known as a component that we can test independently and make sure it's rock solid. It is very important to insure code uniformity through linter, code formatter and never forget DevOps for auto-deploys and codebase management."
-    }
+    },
+    "serverless" : {
+      "title" : "serverless",
+      "text" : "Servers are expensive. Most of the time your project probably doesn't need one. With the rise of cloud functions and databases you can get the computing power that you need only when you need it and it will scale to your needs without having to manage anything. That makes you save time and money, it might even be free. But don't get me wrong big projects often need a complex backend architecture and it can be less of a headache to have a node.js server running on amazon, digital ocean, ibm, etc."
   },
   "form": {
     "title" : "A project in mind ?",
