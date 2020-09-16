@@ -71,7 +71,7 @@
       </div>
     </transition>
     <div class="formContact__parallax">
-      <img src="/images/bghandshake.jpg"/>
+      <img src="/images/bghandshake.jpg" alt="business handshake"/>
     </div>
   </section>
 </template>
